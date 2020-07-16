@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Majka.FAQActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CBCBCB">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CBCBCB"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="186dp"
+                app:srcCompat="@drawable/faqbackground" />
+
+            <TextView
+                android:id="@+id/pitanje1"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="•	Da li trudnica sme da spava na stomaku?" />
+
+            <TextView
+                android:id="@+id/odgovor1"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje2"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Koju hranu trudnice treba da izbegavaju?" />
+
+            <TextView
+                android:id="@+id/odgovor2"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje3"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Da li je moguće dobiti menstruaciju tokom trudnoće?" />
+
+            <TextView
+                android:id="@+id/odgovor3"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje4"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Šta može biti uzrok krvarenja u trudnoći?" />
+
+            <TextView
+                android:id="@+id/odgovor4"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje5"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Kako savladati gorušicu tokom trudnoće?" />
+
+            <TextView
+                android:id="@+id/odgovor5"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje6"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Da li je moja beba tokom seksa bezedna? " />
+
+            <TextView
+                android:id="@+id/odgovor6"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje7"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Kada seks nije dozvoljen?" />
+
+            <TextView
+                android:id="@+id/odgovor7"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje8"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Kako prepoznati 'prave' kontrakcije" />
+
+            <TextView
+                android:id="@+id/odgovor8"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje9"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Spisak stvari koje bi trebalo da ponesete kada krenete na porođaj" />
+
+            <TextView
+                android:id="@+id/odgovor9"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje10"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Da li trudnice smeju da se sunčaju?" />
+
+            <TextView
+                android:id="@+id/odgovor10"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje11"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Da li trudnica sme da se tetovira?" />
+
+            <TextView
+                android:id="@+id/odgovor11"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pitanje12"
+                style="@style/TextViewPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Koliko je opasno držati kućnog ljubimca tokom trudnoće?" />
+
+            <TextView
+                android:id="@+id/odgovor12"
+                style="@style/ZatvorenOdgovor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

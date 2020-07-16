@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_unos"
+        android:icon="@drawable/iconadd"
+        android:title="Unos za današnji dan" />
+    <item
+        android:id="@+id/navigation_pregled"
+        android:icon="@drawable/iconeye"
+        android:title="Pregled" />
+</menu>
