@@ -1,15 +1,22 @@
 package elab3.com.buducamama2.Majka;
 
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.Base64;
 
 import elab3.com.buducamama2.Lekar.Lekar;
 import elab3.com.buducamama2.R;
@@ -20,6 +27,7 @@ public class PocetnaMajka extends AppCompatActivity {
     ArrayList<Lekar> listaLekara;
     final Fragment fragment1 = new PocetnaMajkaFragment();
     final Fragment fragment2 = new NalogMajkaFragment();
+    final Fragment fragment3 = new GlavniMenuFragment();
     SharedPreferences sharedPreferences;
     String datumPoslednjegPristupa;
     final FragmentManager fm = getSupportFragmentManager();
@@ -38,6 +46,11 @@ public class PocetnaMajka extends AppCompatActivity {
                 case R.id.navigation_mojnalog:
                     fm.beginTransaction().hide(active).show(fragment2).commit();
                     active = fragment2;
+                    return true;
+
+                case R.id.navigation_glavnimeni:
+                    fm.beginTransaction().hide(active).show(fragment3).commit();
+                    active = fragment3;
                     return true;
 
             }
@@ -60,6 +73,7 @@ public class PocetnaMajka extends AppCompatActivity {
             }
 
         }
+
         //endregion
         //region randomizer
         sharedPreferences= this.getSharedPreferences("Datum pristupa",MODE_PRIVATE);
@@ -68,12 +82,15 @@ public class PocetnaMajka extends AppCompatActivity {
         // endregion
         BottomNavigationView navView = findViewById(R.id.nav_viewmajka);
             navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        fm.beginTransaction().add(R.id.fragment, fragment3, "3").hide(fragment3).commit();
             fm.beginTransaction().add(R.id.fragment, fragment2, "2").hide(fragment2).commit();
             fm.beginTransaction().add(R.id.fragment,fragment1, "1").commit();
 
 
 
     }
+
+
     public Majka getMajka(){
         return  this.majka;
     }

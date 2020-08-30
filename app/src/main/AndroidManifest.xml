@@ -12,16 +12,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Lekar.Testovi.VaginalniBris"
-            android:theme="@style/Testovi" ></activity>
-        <activity android:name=".Lekar.Testovi.CTG"
-            android:theme="@style/Testovi" ></activity>
-        <activity android:name=".Lekar.Testovi.Amniocenteza"
-            android:theme="@style/Testovi" ></activity>
-        <activity android:name=".Lekar.Testovi.OGTT"
-            android:theme="@style/Testovi" ></activity>
-        <activity android:name=".Lekar.Testovi.TripleTest"
-            android:theme="@style/Testovi" ></activity>
+        <activity android:name=".Majka.FAQ.UnesiFAQActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"
+            android:label=""></activity>
+
+
+        <activity
+            android:name=".Forum.PostaviOdgovorActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"
+            android:label=""></activity>
+        <activity
+            android:name=".Forum.PostaviPitanjeActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"
+            android:label=""/>
+        <activity android:name=".Forum.ForumPitanjeActivity" />
+        <activity android:name=".Forum.ForumActivity" />
+        <activity android:name=".Majka.FAQ.ActivityFAQ" />
+        <activity
+            android:name=".Lekar.Testovi.VaginalniBris"
+            android:theme="@style/Testovi" />
+        <activity
+            android:name=".Lekar.Testovi.CTG"
+            android:theme="@style/Testovi" />
+        <activity
+            android:name=".Lekar.Testovi.Amniocenteza"
+            android:theme="@style/Testovi" />
+        <activity
+            android:name=".Lekar.Testovi.OGTT"
+            android:theme="@style/Testovi" />
+        <activity
+            android:name=".Lekar.Testovi.TripleTest"
+            android:theme="@style/Testovi" />
         <activity
             android:name=".Lekar.Testovi.PapanikolauTest"
             android:theme="@style/Testovi" />

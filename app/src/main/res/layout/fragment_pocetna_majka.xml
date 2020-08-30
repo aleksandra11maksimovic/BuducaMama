@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CBCBCB"
+    android:background="@color/backgroundColor"
     tools:context=".Majka.PocetnaMajkaFragment">
 
     <ScrollView
@@ -88,133 +88,63 @@
             </android.support.constraint.ConstraintLayout>
 
             <android.support.constraint.ConstraintLayout
-                android:id="@+id/constraintLayout"
+                android:id="@+id/constraintBeba"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#6375A3"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
                 app:layout_constraintStart_toStartOf="parent">
 
-                <Button
-                    android:id="@+id/ibultrazvuk"
-                    android:layout_width="0dp"
+                <TextView
+                    android:id="@+id/txtBebaNedelja"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:background="@android:color/transparent"
-                    android:text="Galerija"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp"
+                    android:text="Kako beba izgleda u "
+                    app:layout_constraintBottom_toBottomOf="@+id/imgInfoNedelja"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imgInfoNedelja" />
+
+                <ImageView
+                    android:id="@+id/imgBeba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/birth"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBebaNedelja" />
+
+                <ImageButton
+                    android:id="@+id/imgInfoNedelja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/info2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/txtBebaNedelja"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <Button
-                    android:id="@+id/ibpregledi"
+                <TextView
+                    android:id="@+id/txtInfo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@android:color/transparent"
-                    android:text="Pregledi"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#fff"
+
+                    android:text="TextView"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imgInfoNedelja"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ibultrazvuk" />
+                    app:layout_constraintTop_toBottomOf="@+id/imgInfoNedelja"
+                    app:layout_constraintVertical_bias="0.0" />
 
-                <Button
-                    android:id="@+id/ibfaq"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@android:color/transparent"
-                    android:text="FAQ"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ibpregledi" />
-
-                <Button
-                    android:id="@+id/ibdoctor"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@android:color/transparent"
-                    android:text="Moj lekar"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ibfaq" />
-
-                <Button
-                    android:id="@+id/ibtodo"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:background="@android:color/transparent"
-                    android:text="Parametri"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/ibtodo2"
-                    app:layout_constraintTop_toBottomOf="@+id/ibdoctor" />
-
-                <ImageButton
-                    android:id="@+id/ibulstrazvuk2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:background="#6375A3"
-                    android:src="@drawable/ultrasoundicon"
-                    app:layout_constraintBottom_toBottomOf="@+id/ibultrazvuk"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/ibultrazvuk" />
-
-                <ImageButton
-                    android:id="@+id/ibpregledi2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:background="#6375A3"
-                    android:src="@drawable/stethoscopeicon"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/ibpregledi" />
-
-                <ImageButton
-                    android:id="@+id/ibfaq2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:background="#6375A3"
-                    android:src="@drawable/faqicon"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/ibfaq" />
-
-                <ImageButton
-                    android:id="@+id/ibdoctor2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginStart="8dp"
-                    android:background="#6375A3"
-                    android:src="@drawable/doctoricon"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/ibdoctor" />
-
-                <ImageButton
-                    android:id="@+id/ibtodo2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginStart="8dp"
-                    android:background="#6375A3"
-                    android:src="@drawable/todoicon"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/ibtodo" />
             </android.support.constraint.ConstraintLayout>
 
             <TableLayout

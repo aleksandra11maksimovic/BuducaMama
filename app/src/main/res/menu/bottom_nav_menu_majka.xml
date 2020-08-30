@@ -7,6 +7,10 @@
         android:icon="@drawable/ic_home_black_24dp"
         android:title="Pocetna" />
     <item
+        android:id="@+id/navigation_glavnimeni"
+        android:icon="@drawable/menu"
+        android:title="Glavni meni" />
+    <item
         android:id="@+id/navigation_mojnalog"
         android:icon="@drawable/profile"
         android:title="Moj nalog" />

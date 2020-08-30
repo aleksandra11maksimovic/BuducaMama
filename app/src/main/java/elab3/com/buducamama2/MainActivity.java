@@ -227,6 +227,7 @@ public class MainActivity extends AppCompatActivity {
 
                             SharedPreferences.Editor editor = sharedPreferences.edit();
                             editor.putString("id", m.getUsername());
+                            editor.putBoolean("lekar",false);
 
                             editor.apply();
                             finish();
@@ -257,6 +258,7 @@ public class MainActivity extends AppCompatActivity {
                             intent.putExtra("ListaMajki", listaMajki);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
                             editor.putString("id", l.getUsername());
+                            editor.putBoolean("lekar",true);
                             editor.apply();
                             finish();
                             startActivity(intent);

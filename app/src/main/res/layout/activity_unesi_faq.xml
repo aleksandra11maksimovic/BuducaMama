@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColorLekar"
+    tools:context=".Majka.FAQ.UnesiFAQActivity">
+
+    <EditText
+        android:id="@+id/etNovoPitanje"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Pitanje"
+        android:ems="10"
+
+        android:background="#FFF"
+        android:gravity="start|bottom"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNoviOdgovor"
+        android:layout_width="0dp"
+        android:hint="Odgovor"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:background="#FFF"
+        android:gravity="start|bottom"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/etNovoPitanje"
+        app:layout_constraintStart_toStartOf="@+id/etNovoPitanje"
+        app:layout_constraintTop_toBottomOf="@+id/etNovoPitanje" />
+
+    <Button
+        android:id="@+id/btnUnesiPitanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Unesi pitanje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNoviOdgovor" />
+</android.support.constraint.ConstraintLayout>

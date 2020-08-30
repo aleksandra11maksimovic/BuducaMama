@@ -104,6 +104,8 @@ public class ParametriPregledFragment extends Fragment {
         RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
+
+
         return view;
     }
 

@@ -92,7 +92,6 @@ public class ListaPregleda extends AppCompatActivity {
                 if (dataSnapshot.exists()) {
                     Log.d("Da visio","yes");
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                        Log.d("Sta sat","ima ima");
                         Pregled pregled = ds.getValue(Pregled.class);
                         listaPregleda.add(pregled);
                     }

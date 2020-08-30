@@ -1,5 +1,6 @@
 package elab3.com.buducamama2.Lekar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -11,6 +12,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
@@ -23,8 +25,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import elab3.com.buducamama2.Forum.ForumActivity;
+import elab3.com.buducamama2.Majka.FAQ.ActivityFAQ;
 import elab3.com.buducamama2.Majka.Majka;
-import elab3.com.buducamama2.R;
 import elab3.com.buducamama2.R;
 
 
@@ -40,7 +43,10 @@ public class PocetnaFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
     private EditText etpretraga;
+    Button btnOtvoriForum;
+    Button btnOtvoriFAQ;
     ImageButton erase;
     Lekar lekar;
     private List<Majka> listaMajki;
@@ -107,7 +113,26 @@ public class PocetnaFragment extends Fragment {
                 etpretraga.setText("");
             }
         });
+        btnOtvoriForum= view.findViewById(R.id.btnOtvoriForum);
+        btnOtvoriForum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(getContext(), ForumActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnOtvoriFAQ= view.findViewById(R.id.btnOtvoriFAQ);
+        btnOtvoriFAQ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(getContext(), ActivityFAQ.class
+                );
+                startActivity(intent);
+            }
+        });
+
         return view;
+
 
 }
 
