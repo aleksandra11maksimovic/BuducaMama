@@ -48,6 +48,19 @@
             app:layout_constraintStart_toStartOf="@+id/txtOdgovor"
             app:layout_constraintTop_toBottomOf="@+id/txtOdgovor"
             app:srcCompat="@drawable/doctoricon" />
+
+        <ImageButton
+            android:id="@+id/imgButtonObrisiOdgovor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/txtPostavioOdgovor"
+            app:layout_constraintEnd_toStartOf="@+id/txtPostavioOdgovor"
+            app:layout_constraintTop_toTopOf="@+id/txtPostavioOdgovor"
+            app:srcCompat="@drawable/delete" />
+
     </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

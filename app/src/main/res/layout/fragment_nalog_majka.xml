@@ -14,7 +14,7 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#CBCBCB">
+            android:background="@color/backgroundColor">
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -32,7 +32,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="25dp"
-                android:fontFamily="sans-serif-medium"
                 android:text="Ime:"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +42,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:fontFamily="sans-serif-medium"
                 android:text="Username"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/textView12"
@@ -54,7 +52,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:fontFamily="sans-serif-medium"
                 android:text="Prezime:"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/textView9"
@@ -66,7 +63,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="4dp"
-                android:fontFamily="sans-serif-medium"
                 android:text="TextView"
                 app:layout_constraintStart_toEndOf="@+id/textView9"
                 app:layout_constraintTop_toTopOf="@+id/textView9" />
@@ -77,7 +73,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="4dp"
-                android:fontFamily="sans-serif-medium"
                 android:text="TextView"
                 app:layout_constraintStart_toEndOf="@+id/textView12"
                 app:layout_constraintTop_toTopOf="@+id/textView12" />
@@ -88,7 +83,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="4dp"
-                android:fontFamily="sans-serif-medium"
                 android:text="TextView"
                 app:layout_constraintStart_toEndOf="@+id/textView11"
                 app:layout_constraintTop_toTopOf="@+id/textView11" />
@@ -126,7 +120,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:fontFamily="sans-serif-medium"
                     android:text="Ponovite novi password"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -139,7 +132,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:ems="10"
-                    android:fontFamily="sans-serif-medium"
                     android:hint="Stari password"
                     android:inputType="textPersonName"
                     android:textSize="14sp"
@@ -154,7 +146,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="25dp"
                     android:ems="10"
-                    android:fontFamily="sans-serif-medium"
+
                     android:hint="Novi password"
                     android:inputType="textPersonName"
                     android:textSize="14sp"
@@ -169,7 +161,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:ems="10"
-                    android:fontFamily="sans-serif-medium"
                     android:hint="Novi password"
                     android:inputType="textPersonName"
                     android:textSize="14sp"
@@ -185,7 +176,6 @@
                     android:layout_marginTop="100dp"
                     android:layout_marginEnd="8dp"
                     android:background="@drawable/mojidugmici"
-                    android:fontFamily="sans-serif-medium"
                     android:text="Potvrdi promenu"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/etNovipassMajka"

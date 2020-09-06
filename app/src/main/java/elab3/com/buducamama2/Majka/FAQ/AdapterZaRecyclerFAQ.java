@@ -70,14 +70,12 @@ public class AdapterZaRecyclerFAQ extends RecyclerView.Adapter{
                 @Override
                 public void onClick(View view) {
                     if(!pitanja.isOtvoreno()){
-                        txtPitanje.setTypeface(null, Typeface.BOLD);
                         txtOdgovor.setTextSize(TypedValue.COMPLEX_UNIT_SP,14);
                         pitanja.setOtvoreno(true);
 
                     }else{
                         pitanja.setOtvoreno(false);
                         txtOdgovor.setTextSize(TypedValue.COMPLEX_UNIT_SP,0);
-                        txtPitanje.setTypeface(null,Typeface.NORMAL);
 
                     }
                 }

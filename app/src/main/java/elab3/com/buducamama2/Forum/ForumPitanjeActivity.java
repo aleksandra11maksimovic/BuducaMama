@@ -1,6 +1,7 @@
 package elab3.com.buducamama2.Forum;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -40,8 +41,9 @@ public class ForumPitanjeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        SharedPreferences sharedPreferences= getSharedPreferences("id", MODE_PRIVATE);
 
-        AdapterZaRecyclerViewOdgovori adapterZaRecyclerViewOdgovori= new AdapterZaRecyclerViewOdgovori(tema,this);
+        AdapterZaRecyclerViewOdgovori adapterZaRecyclerViewOdgovori= new AdapterZaRecyclerViewOdgovori(tema,this, sharedPreferences.getString("id",""));
         recyclerView.setAdapter(adapterZaRecyclerViewOdgovori);
         RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
